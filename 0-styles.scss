@@ -152,7 +152,7 @@ template {
 /* Variables
   ============================= */
 
-$font-family_primary: 'Source Sans Pro', sans-serif;
+$font-family_primary: "Source Sans Pro", sans-serif;
 $primary-color: white;
 $value-image-scale: 1;
 
@@ -267,9 +267,13 @@ $value-image-scale: 1;
       padding: 15px 15px;
       width: 160px;
       border-radius: 30px;
-      background: #FF6565;
+      background: #ff6565;
       color: $primary-color;
       border: none;
+      &:hover {
+        opacity: 0.8;
+
+      }
     }
   }
 }
@@ -277,24 +281,68 @@ $value-image-scale: 1;
 .what_we_do {
   padding: 25px;
   text-align: center;
-  &  .we_do_body {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  & .card {
-    flex-basis: 300px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    line-height: 30px;
+  & .we_do_body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    & .card {
+      flex-basis: 300px;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      line-height: 30px;
+    }
   }
-}
-
 }
 
 .our_result {
   width: 100%;
   height: 100vh;
+}
+
+@media screen and (min-width: 767px) {
+  .navbar {
+    background: transparent;
+    position: absolute;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    z-index: 3;
+
+    &__options {
+      text-align: center;
+      list-style: none;
+    }
+
+    &__input {
+      display: none;
+    }
+
+    &__label_hamburger {
+      display: none;
+    }
+
+    &__logo {
+      flex-basis: 50%;
+      max-width: 161px;
+    }
+
+    &__options {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: center;
+      & li a {
+        color: $primary-color;
+        text-decoration: none;
+        padding-left: 10px;
+        &:hover{
+          color: #ff6565;
+        }
+      }
+    }
+  }
 }
