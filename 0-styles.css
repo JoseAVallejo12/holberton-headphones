@@ -195,16 +195,17 @@ template {
   z-index: 3;
 }
 
-.navbar__opciones {
+.navbar__options {
   text-align: center;
+  list-style: none;
 }
 
-.navbar__opciones li {
+.navbar__options li {
   padding-top: 7px;
   line-height: 1px;
 }
 
-.navbar__opciones li a {
+.navbar__options li a {
   color: transparent;
 }
 
@@ -221,7 +222,7 @@ template {
   max-width: 161px;
 }
 
-.navbar__opciones {
+.navbar__options {
   flex-basis: 100%;
 }
 
@@ -258,12 +259,12 @@ template {
   transition: transform 0.2s ease;
 }
 
-.navbar__input:checked ~ .navbar__opciones li {
+.navbar__input:checked ~ .navbar__options li {
   padding-top: 40px;
   transition: all 0.3s ease;
 }
 
-.navbar__input:checked ~ .navbar__opciones li a {
+.navbar__input:checked ~ .navbar__options li a {
   color: white;
   text-decoration: none;
 }

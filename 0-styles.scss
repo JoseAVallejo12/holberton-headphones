@@ -167,8 +167,9 @@ $value-image-scale: 1;
   width: 100vw;
   z-index: 3;
 
-  &__opciones {
+  &__options {
     text-align: center;
+    list-style: none;
     & li {
       padding-top: 7px;
       line-height: 1px;
@@ -191,7 +192,7 @@ $value-image-scale: 1;
     max-width: 161px;
   }
 
-  &__opciones {
+  &__options {
     flex-basis: 100%;
   }
 }
@@ -247,7 +248,7 @@ $value-image-scale: 1;
     height: 100vh;
     object-fit: cover;
     object-position: 35%;
-    transform: scale($value-image-sccale);
+    transform: scale($value-image-scale);
   }
   & .hero-info {
     position: absolute;
