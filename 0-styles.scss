@@ -30,7 +30,6 @@ a {
 }
 abbr[title] {
   border-bottom: none;
-  text-decoration: underline;
   text-decoration: underline dotted;
 }
 b,
@@ -245,7 +244,7 @@ $value-image-scale: 1;
   width: 100%;
   & .hero-body .hero__imagen {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     object-fit: cover;
     object-position: 35%;
     transform: scale($value-image-scale);
@@ -261,9 +260,7 @@ $value-image-scale: 1;
     font-family: $font-family_primary;
 
     & .hero-button {
-      margin: 0 auto;
-      margin-top: 30px;
-      margin-bottom: 60px;
+      margin: 30px auto 60px;
       padding: 15px 15px;
       width: 160px;
       border-radius: 30px;
@@ -295,11 +292,48 @@ $value-image-scale: 1;
       line-height: 30px;
     }
   }
+  & .we_do_header h2 {
+    padding: 60px 30px;
+  }
 }
 
 .our_result {
   width: 100%;
-  height: 100vh;
+  height: fit-content;
+  background-color: #071629;
+  background-image: url("./images/headphones_hero_2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 20% top;
+  text-align: center;
+  font-family: $font-family_primary;
+  color: $primary-color;
+  padding: 25px;
+  &_header {
+    & h2 {
+      padding: 125px 0 40px;
+    }
+  }
+  &_body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    & .imagen_body {
+      width: 190px;
+      height: 190px;
+      margin: 42px;
+      background-image: url("./images/pentagone.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & span {
+        font-size: 40px;
+        font-weight: 700;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 767px) {
