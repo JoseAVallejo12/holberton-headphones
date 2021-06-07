@@ -4,6 +4,7 @@
 
 $font-family_primary: "Source Sans Pro", sans-serif;
 $primary-color: white;
+$secondary-color: #071629;
 $value-image-scale: 1;
 
 /* Global Styles
@@ -226,6 +227,72 @@ body {
   }
 }
 
+/* Contact Us Section
+  ============================= */
+.contact_us {
+  display: block;
+  width: 100vw;
+  color: $secondary-color;
+  text-align: center;
+  & button {
+    background: #FF6565;
+    padding: 20px;
+    border: none;
+    color: $primary-color;
+    border-radius: 30px;
+    margin-top: 40px;
+
+  }
+  &_wrapper {
+    margin: 0 auto;
+    padding-top: 70px;
+    width: 335px;
+    height: 473px;
+  }
+  &_wrapper .form .form_field {
+    border-bottom: 1px solid #979797;
+    text-align: left;
+    color: $secondary-color;
+    font-weight: bold;
+    margin-top: 40px;
+  }
+  &_wrapper .form .form_field label {
+    display: block;
+    width: 100%;
+  }
+  &_wrapper .form .form_field input {
+    border: none;
+    outline-style: none;
+  }
+
+}
+
+/* Footer Us Section
+  ============================= */
+.footer {
+  width: 100vw;
+  height: 250px;
+  padding-right: 60px;
+  padding-left: 60px;
+  background: $secondary-color;
+  text-align: center;
+  &_logo {
+    padding-top: 40px;
+    display: block;
+  }
+  &_social {
+    padding-top: 40px;
+    display: block;
+  }
+
+  &_author{
+    padding-top: 40px;
+    position: relative;
+    color: #979797;
+  }
+
+}
+
 /* Tablet view Styles
   ============================= */
 @media screen and (min-width: 767px) {
@@ -281,14 +348,38 @@ body {
     padding-left: 10%;
     padding-right: 10%;
   }
-  .our_result_header {
-    margin: 0 auto;
-    max-width: 1440px;
-    padding-left: 10%;
-    padding-right: 10%;
+  .our_result {
+    background-size: cover;
+    background-position: -300px;
+    &_header {
+      margin: 0 auto;
+      max-width: 1440px;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    &_log {
+      flex-basis: 50%;
+    }
+    &_social {
+      flex-basis: 50%;
+      text-align: right;
+    }
+    &_author {
+      flex-basis: 100%;
+    }
   }
 }
 
+/* Desktop view Styles
+  ============================= */
 @media screen and (min-width: 1440px) {
   .navbar {
     max-width: 1440px;
@@ -305,6 +396,10 @@ body {
       padding-left: 400px;
       padding-right: 400px;
     }
+  }
+  .our_result {
+    background-size: cover;
+    background-position: -200px;
   }
   .our_result_header {
     margin: 0 auto;
