@@ -1,4 +1,8 @@
 # 0x09. Implement a design from scratch
+|![icon folder](https://img.icons8.com/fluent-systems-filled/20/216aff/opened-folder.png) Specializations > Web Stack programming > Front-end |
+|-------|
+|![icon user](https://img.icons8.com/fluent-systems-filled/20/216aff/user.png) By Jose Vallejo, Full-Stack Student at Holberton School|
+|![icon linkedin](https://img.icons8.com/nolan/64/linkedin.png) ![icon github](https://img.icons8.com/nolan/64/github.png)|   
 
 ## Implement a design
 Web Stack programming
@@ -19,4 +23,6 @@ Building a web page the right way, is not easy - expect if you put in place stro
 **Last advice:** I always start to build a web page from outside to inside and from top to bottom.
 
 Now, your turn!
+## Implementing design
+### Show Web Page [Here !!!!](https://trusting-kirch-221eb3.netlify.app/)
 
